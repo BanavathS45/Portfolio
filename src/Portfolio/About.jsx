@@ -1,34 +1,41 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+ 
 
 const About = () => {
   return (
     <div className="aboutPage">
-      <div className="aboutdiv">
+      <div className="aboutContainer">
+        {/* Top Section: Image + Intro */}
         <div className="aboutMe">
           <div className="profilePic">
-            <img src="./photo.jpg " alt="" />
+            <img src="./photo.jpg" alt="Banavath Prashanth" />
           </div>
-          <h4>ABOUT ME</h4>
-          👋 Hi there! I'm [Banavath Prashanth], a passionate full-stack
+          <div className="aboutText">
+            <h2>About Me</h2>
+            <p>
+              👋 Hi there! I'm <strong>Banavath Prashanth</strong>, a passionate full-stack
           developer with a keen eye for crafting clean, efficient, and scalable
           code. With a blend of creativity and technical expertise, I thrive in
           turning ideas into robust digital solutions.
-          <br />
-          <br />
-          <h5>My Journey</h5>
+        
+            </p>
+          </div>
+        </div>
+
+        {/* Bottom Section: Rest of content */}
+        <div className="aboutDetails">
+          <h4>My Journey</h4>
           <p>
-          
-            My journey into the world of software development began [X years
+          My journey into the world of software development began [X years
             ago], sparked by a curiosity for problem-solving and a fascination
             with technology. Since then, I've embarked on a continuous learning
             path, honing my skills across various technologies and
             methodologies.
           </p>
-          <h5>Expertise</h5>
-          <p>
-            {" "}
-            As a full-stack developer, I'm proficient in both front-end and
+
+          <h4>Expertise</h4>
+          <p> As a full-stack developer, I'm proficient in both front-end and
             back-end technologies. On the front end, I specialize in crafting
             responsive and intuitive user interfaces using modern frameworks
             such as React.js and Angular. Leveraging my solid understanding of
@@ -57,15 +64,16 @@ const About = () => {
             solve real-world problems and create meaningful experiences for
             users. Whether it's building innovative web applications, optimizing
             existing systems, or exploring emerging technologies, I'm dedicated
-            to delivering high-quality solutions that make a positive impact.
-          </p>
-          <h5>Let's Connect</h5>
+            to delivering high-quality solutions that make a positive impact.</p>
+
+          
+
+          <h4>Let’s Connect</h4>
           <p>
-            I'm always excited to collaborate on new projects, exchange ideas,
-            and learn from fellow developers and industry professionals. Feel
-            free to reach out to me via [email/LinkedIn/website], and let's turn
-            your vision into reality together!
+            I’m open to projects, ideas, and networking! Reach out via
+            <em> [email / LinkedIn / website]</em>.
           </p>
+
           <div className="info-Btn">
             <Link to="/contact" className="btn border-warning project-btn  ">
               HIRE ME
