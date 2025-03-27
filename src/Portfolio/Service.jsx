@@ -92,12 +92,7 @@ const Service = () => {
                 <span>
                &lt;/&gt;
                 </span>
-                {/* <span>
-                   /
-                </span>
-                <span>
-                  <FontAwesomeIcon icon={faAngleRight} />
-                </span> */}
+                
                 <h2>PROGRAMMING LANGUAGES</h2>
               </div>
               <div className="videoDeatils">
